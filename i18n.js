@@ -182,7 +182,10 @@ Pillovox 枕头剖面结构|Pillovox pillow cutaway
 深夜打磨|Late-night refinement
 量产前夜|Before production
 `;
-const zhToEn = new Map(copy.trim().split('\n').map(line => line.split('|')));
+const translations = copy.split('\n')
+  .map(line => line.split('|'))
+  .filter(([zh, en]) => zh?.trim() && en?.trim());
+const zhToEn = new Map(translations);
 const enToZh = new Map([...zhToEn].map(([zh,en]) => [en,zh]));
 let language = 'zh';
 const originalText = new WeakMap();
@@ -191,7 +194,7 @@ function translateNode(node) {
   const current = node.nodeValue;
   if (!record || current !== record.rendered) record = {original:current, rendered:current};
   const trimmed = record.original.trim();
-  const output = language === 'en' && zhToEn.has(trimmed)
+  const output = trimmed && language === 'en' && zhToEn.has(trimmed)
     ? record.original.replace(trimmed, zhToEn.get(trimmed)) : record.original;
   record.rendered = output;
   originalText.set(node, record);

@@ -189,10 +189,14 @@ const zhToEn = new Map(translations);
 const enToZh = new Map([...zhToEn].map(([zh,en]) => [en,zh]));
 let language = 'zh';
 const originalText = new WeakMap();
+
+function normalizeLegacyName(value) {
+  return value.trim() === '陈星昊' ? value.replace('陈星昊', '陈星皓') : value;
+}
 function translateNode(node) {
   let record = originalText.get(node);
   const current = node.nodeValue;
-  if (!record || current !== record.rendered) record = {original:current, rendered:current};
+  if (!record || current !== record.rendered) record = {original:normalizeLegacyName(current), rendered:current};
   const trimmed = record.original.trim();
   const output = trimmed && language === 'en' && zhToEn.has(trimmed)
     ? record.original.replace(trimmed, zhToEn.get(trimmed)) : record.original;
@@ -209,7 +213,8 @@ function translatePage() {
   document.querySelectorAll('[aria-label]:not(#languageToggle)').forEach(el => { const dict = language === 'en' ? zhToEn : enToZh; const label = el.getAttribute('aria-label'); if (dict.has(label)) el.setAttribute('aria-label', dict.get(label)); });
   document.querySelectorAll('img[alt]').forEach(img => {
     const dict = language === 'en' ? zhToEn : enToZh;
-    if (dict.has(img.alt)) img.alt = dict.get(img.alt);
+    const alt = normalizeLegacyName(img.alt);
+    img.alt = dict.get(alt) ?? alt;
   });
 }
 const languageButton = document.getElementById('languageToggle');

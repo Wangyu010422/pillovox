@@ -115,7 +115,7 @@ Pillovox 正式登陆京东众筹，把温柔的声音送进更多人的梦里�
 量产前夜的定妆照|Ready for production
 认识我们的团队|Meet our team
 悬停查看成员介绍|Hover to meet each member
-陈星昊|Chen Xinghao
+陈星皓|Chen Xinghao
 李雨泽|Li Yuze
 梁傲寒|Liang Aohan
 程默涵|Cheng Mohan

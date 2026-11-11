@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pillovox 枕语 · Pillovox 骨传导睡眠枕</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav id="nav">
+  <a class="logo" href="#hero">
+    <span class="en">pillovox</span><span class="cn">枕 语</span>
+  </a>
+  <div class="nav-links">
+    <a href="#brand">产品理念</a>
+    <a href="#products">产品系列</a>
+    <a href="#tech">科技</a>
+    <a href="#steps">体验</a>
+  </div>
+  <div class="nav-actions"><a class="journey-link" href="journey.html">团队故事</a><button id="languageToggle" type="button" aria-label="Switch to English">EN</button><a class="nav-cta" href="#cta">探索更多</a></div>
+</nav>
+
+<!-- ============ HERO 概念照片 16:9 ============ -->
+<section class="hero" id="hero">
+  <div class="hero-media"><img src="assets/hero-sleep.png" alt="Pillovox 睡眠枕"></div>
+  <div class="hero-copy">
+    <div class="hero-slogan show" data-s="0">
+      <h1>一人晚睡，<br>不打扰身边的你</h1>
+      <p>SLEEP LATE, DISTURB NO ONE</p>
+    </div>
+    <div class="hero-slogan" data-s="1">
+      <h1>把温柔的声音，<br>装进你的梦里</h1>
+      <p>WHISPER GENTLE SOUND INTO YOUR DREAMS</p>
+    </div>
+  </div>
+  <div class="hero-dots"><span class="on"></span><span></span></div>
+  <div class="scroll-hint">下滑探索</div>
+</section>
+
+<!-- ============ 品牌介绍 ============ -->
+<section class="brand" id="brand">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">OUR PRODUCT</div>
+      <h2>低语入梦，温柔唤醒</h2>
+      <div class="sub">WHISPERING FOR DREAM, AWAKENING WITH GENTLE</div>
+    </div>
+    <div class="brand-grid">
+      <div class="brand-title reveal">
+        <h2>认识我们的产品<br>—— Pillovox</h2>
+        <div class="en-sub">A SMART PILLOW THAT ONLY YOU CAN HEAR</div>
+        <div class="type-box">
+          <div class="type-text"><span id="typeTarget"></span><span class="type-cursor"></span></div>
+        </div>
+      </div>
+      <div class="film-card reveal d1" id="filmCard">
+        <div class="tag">介绍短片 · INTRO</div>
+        <h3>Pillovox 骨传导睡眠枕</h3>
+        <p>Pillovox 将骨传导发声、压力传感与震动唤醒藏进一只枕头。声音不再经过空气，而是经由枕骨悄悄抵达耳内——枕边人浑然不觉，只有你听见梦里的温柔。点击展开了解更多。</p>
+        <div class="play">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 4l14 8-14 8V4z" fill="#efe6d4"/></svg>
+        </div>
+        <div class="more">点击卡片展开介绍</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 我们的产品 ============ -->
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">OUR PRODUCTS</div>
+      <h2>我们的产品</h2>
+      <div class="sub">THREE WAYS TO A GENTLER NIGHT</div>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card reveal" data-prod="0">
+        <div class="idx">NO.01</div>
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 30c0-8 6-14 16-14s16 6 16 14"/><path d="M14 30h20"/><circle cx="24" cy="18" r="3"/></svg>
+        <h3>骨传导助眠枕</h3>
+        <div class="en">BONE CONDUCTION PILLOW</div>
+        <p>枕下私语，只有你能听见。经由颅骨传递的白噪音与助眠音频，不打扰同床的 TA。</p>
+        <div class="go">查看详情 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="prod-card reveal d1" data-prod="1">
+        <div class="idx">NO.02</div>
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 20v8M16 14v20M24 8v32M32 14v20M38 20v8"/></svg>
+        <h3>白噪音助眠枕</h3>
+        <div class="en">WHITE NOISE PILLOW</div>
+        <p>雨声、海浪、篝火……精选自然声景，由枕内振子轻柔送出，盖过城市的喧嚣。</p>
+        <div class="go">查看详情 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="prod-card reveal d2" data-prod="2">
+        <div class="idx">NO.03</div>
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="14"/><path d="M24 14v10l7 5"/></svg>
+        <h3>震动唤醒枕</h3>
+        <div class="en">GENTLE WAKE-UP PILLOW</div>
+        <p>到点轻柔震动，由浅入深唤醒你——告别刺耳闹钟，也不惊扰还在熟睡的家人。</p>
+        <div class="go">查看详情 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 产品科技 爆炸图 ============ -->
+<section class="tech" id="tech">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">INSIDE THE PILLOW</div>
+      <h2>一只枕头的内在</h2>
+      <div class="sub">点击圆点，探索每一处细节</div>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-figure reveal">
+        <img src="assets/pillow-cutaway.png" alt="Pillovox 枕头剖面结构">
+        <button class="hotspot" style="left:74%;top:28%" data-part="0">1</button>
+        <button class="hotspot" style="left:62%;top:40%" data-part="1">2</button>
+        <button class="hotspot" style="left:47%;top:50%" data-part="2">3</button>
+        <button class="hotspot" style="left:12%;top:47%" data-part="3">4</button>
+        <div class="layer-tag" style="right:4%;left:auto;top:14%">枕面 Pillowcase</div>
+        <div class="layer-tag" style="left:4%;top:88%">枕底 Bottom</div>
+      </div>
+      <div class="tech-panel reveal d1">
+        <div class="no" id="partNo">PART 01</div>
+        <h3 id="partName">骨传导振子</h3>
+        <div class="en" id="partEn">BONE CONDUCTION TRANSDUCER</div>
+        <p id="partDesc">嵌入枕芯两侧的高灵敏度骨传导振子，把音频信号转化为细微的颅骨振动。声音不经过空气传播，枕边人零打扰，只有你枕着整个世界的白噪音。</p>
+        <div class="tech-tabs">
+          <button class="on" data-part="0">骨传导振子</button>
+          <button data-part="1">压力传感器</button>
+          <button data-part="2">震动模块</button>
+          <button data-part="3">控制按钮</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 三步获得优质睡眠 ============ -->
+<section class="steps" id="steps">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">THREE STEPS TO BETTER SLEEP</div>
+      <h2>三步获得优质睡眠</h2>
+      <div class="sub">点击步骤，或点击右侧按键亲身体验</div>
+    </div>
+    <div class="steps-layout">
+      <div class="step-list">
+        <div class="step-item on reveal" data-step="0">
+          <div class="num">1</div>
+          <div>
+            <h3>夜晚躺下，整好枕头</h3>
+            <p>将 Pillovox 平放在床面，调整至肩颈自然贴合的弧度，让耳朵刚好落在振子区域上方。</p>
+          </div>
+        </div>
+        <div class="step-item reveal d1" data-step="1">
+          <div class="num">2</div>
+          <div>
+            <h3>打开开关，下载软件</h3>
+            <p>长按枕侧电源键开机，手机下载 pillovox App，完成首次蓝牙配对。</p>
+          </div>
+        </div>
+        <div class="step-item reveal d2" data-step="2">
+          <div class="num">3</div>
+          <div>
+            <h3>打开软件，设置睡眠</h3>
+            <div class="step-sub">
+              <span>3-1 打开软件，设置闹钟</span>
+              <span>3-2 连接蓝牙，播放音乐</span>
+              <span>3-3 设置震动，温柔唤醒</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="device reveal d1">
+        <div class="cap">PILLOVox CONTROL PANEL</div>
+        <h3>枕侧按键 · 动手试试</h3>
+        <div class="device-body">
+          <button class="d-btn" data-act="power">电源</button>
+          <button class="d-btn" data-act="play">播放<br>暂停</button>
+          <button class="d-btn" data-act="prev">上一首</button>
+          <button class="d-btn" data-act="next">下一首</button>
+          <button class="d-btn" data-act="bt">蓝牙</button>
+        </div>
+        <div class="d-readout" id="readout"><b>提示：</b>按键从左到右依次为 开/关机、播放暂停、上一首、下一首、蓝牙连接。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 每一次睡眠都值得被温柔以待 ============ -->
+<section class="care">
+  <img src="assets/pillow-night.png" alt="侧卧无忧">
+  <div class="care-copy">
+    <h2 class="reveal">每一次睡眠，<br>都值得被温柔以待</h2>
+    <div class="en reveal d1">EVERY SLEEP, A GENTLE EMBRACE</div>
+    <div class="care-chips">
+      <div class="chip reveal d1">
+        <h4>侧睡无忧</h4>
+        <p>人体工学曲线贴合肩颈，耳朵悬空不受压，整晚翻身都安稳。</p>
+      </div>
+      <div class="chip reveal d2">
+        <h4>温柔唤醒</h4>
+        <p>震动脉冲由弱到强模拟自然苏醒，没有惊心的闹铃，只有被晨光轻推的早晨。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="cta">
+  <div class="wrap">
+    <h2 class="reveal">探索更多</h2>
+    <div class="en reveal d1">EXPLORE A NEW ERA OF SLEEP</div>
+    <div class="cta-cards">
+      <div class="cta-card reveal d1">
+        <div class="t">选购枕头</div>
+        <div class="s">京东众筹 · 限时首发</div>
+      </div>
+      <div class="cta-card dark reveal d2">
+        <div class="t">下载 App</div>
+        <div class="s">iOS / Android</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="logo"><span class="en">pillovox</span><span class="cn" style="color:#6b6252">枕 语</span></div>
+      <p style="margin-top:14px;max-width:320px;line-height:1.9">低语入梦，温柔唤醒。<br>Pillovox 骨传导睡眠枕官方网站。</p>
+    </div>
+    <div>
+      <p>联系我们<br><br>hello@pillovox.sleep<br>上海市 · 睡眠实验室</p>
+    </div>
+  </div>
+  <div class="bar">
+    <span>© 2026 pillovox 枕语 · Pillovox</span>
+    <span>把温柔的声音，装进你的梦里</span>
+  </div>
+</footer>
+
+<!-- ============ Lightbox ============ -->
+
+
+<!-- ============ Product Modal ============ -->
+<div class="modal" id="prodModal">
+  <div class="modal-bg" data-close></div>
+  <div class="modal-box">
+    <button class="close" data-close>&times;</button>
+    <div class="k" id="mK"></div>
+    <h3 id="mTitle"></h3>
+    <div class="m-en" id="mEn"></div>
+    <img id="mImg" src="" alt="">
+    <p id="mDesc"></p>
+    <div class="m-feats" id="mFeats"></div>
+  </div>
+</div>
+
+<script>
+/* ================= Data ================= */
+const products = [
+  {
+    k:'NO.01 · BONE CONDUCTION', title:'骨传导助眠枕', en:'BONE CONDUCTION PILLOW',
+    img:'assets/pillow-full.png',
+    desc:'区别于传统音箱的外放，Pillovox 采用双侧骨传导振子，音频通过枕骨直达内耳。即使音量清晰可闻，枕边 30 厘米外的声音衰减也超过 90%——一人晚睡，不再是一种打扰。',
+    feats:[['私密声场','声音只在你的颅骨里响起'],['零耳塞异物感','整晚佩戴无任何胀痛'],['智能音量','随环境噪声自动调节']]
+  },
+  {
+    k:'NO.02 · WHITE NOISE', title:'白噪音助眠枕', en:'WHITE NOISE PILLOW',
+    img:'assets/pillow-night.png',
+    desc:'内置 24 种精心录制的自然声景：梅雨、远雷、壁炉、深海……配合记忆棉的包裹感，让大脑在 15 分钟内进入放松状态。定时渐弱，在你睡着后悄悄退场。',
+    feats:[['24 种声景','实地采样，拒绝循环假声'],['渐弱入眠','入睡后音量自动归零'],['整夜续航','一次充电陪伴 15 个夜晚']]
+  },
+  {
+    k:'NO.03 · GENTLE WAKE-UP', title:'震动唤醒枕', en:'GENTLE WAKE-UP PILLOW',
+    img:'assets/hero-sleep.png',
+    desc:'闹钟响起前 20 分钟，枕内震动模块开始由弱至强的轻柔脉冲，模拟自然苏醒过程。清晨七点被「推醒」，而不是被「吓醒」——同床的 TA 依旧好梦。',
+    feats:[['渐进震动','由轻到重，拒绝惊醒'],['智能浅睡唤醒','在浅睡期选择最佳时机'],['双闹钟','左右分区，各起各的']]
+  }
+];
+
+const parts = [
+  {no:'PART 01', name:'骨传导振子', en:'BONE CONDUCTION TRANSDUCER',
+   desc:'嵌入枕芯两侧的高灵敏度骨传导振子，把音频信号转化为细微的颅骨振动。声音不经过空气传播，枕边人零打扰，只有你枕着整个世界的白噪音。'},
+  {no:'PART 02', name:'压力传感器', en:'PRESSURE SENSOR',
+   desc:'铺在枕芯下方的柔性压力传感薄膜，实时感知你的睡姿与离枕状态。躺下自动续播，起身自动暂停，还能记录翻身次数与睡眠时长。'},
+  {no:'PART 03', name:'震动模块', en:'VIBRATION MODULE',
+   desc:'藏在弹簧矩阵之间的微型线性马达组，负责清晨的温柔唤醒。震动频率与强度经过 300 名用户盲测校准，在「一定能醒」和「一定不被吓到」之间找到完美平衡。'},
+  {no:'PART 04', name:'控制按钮', en:'CONTROL BUTTON',
+   desc:'枕侧凸起式盲操按键，不开灯也能摸黑操作。从左到右：开/关机、播放暂停、上一首、下一首、蓝牙配对——伸手即达。'}
+];
+
+/* ================= Nav ================= */
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), {passive:true});
+
+/* active nav link */
+const secIds = ['brand','products','tech','steps'];
+const navAs = [...document.querySelectorAll('.nav-links a')];
+addEventListener('scroll', () => {
+  let cur = -1;
+  secIds.forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (el && el.getBoundingClientRect().top < innerHeight * .45) cur = i;
+  });
+  navAs.forEach((a, i) => a.classList.toggle('active', i === cur));
+}, {passive:true});
+
+/* ================= Hero slogan rotation ================= */
+const slogans = [...document.querySelectorAll('.hero-slogan')];
+const dots = [...document.querySelectorAll('.hero-dots span')];
+let sIdx = 0;
+setInterval(() => {
+  slogans[sIdx].classList.remove('show');
+  dots[sIdx].classList.remove('on');
+  sIdx = (sIdx + 1) % slogans.length;
+  slogans[sIdx].classList.add('show');
+  dots[sIdx].classList.add('on');
+}, 5200);
+
+/* ================= Reveal on scroll ================= */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), {threshold: .18});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* ================= Typewriter ================= */
+const typeText = 'Pillovox 是一款骨传导睡眠枕。我们相信，夜晚的声音应该是私密的、温柔的、只属于你的。我们把骨传导、压力传感和震动唤醒融入一只枕头，让每一个夜晚与清晨，都多一份温柔。';
+let typed = false;
+new IntersectionObserver((es, ob) => {
+  if (!es[0].isIntersecting || typed) return;
+  typed = true; ob.disconnect();
+  const t = document.getElementById('typeTarget');
+  t.textContent = typeText;
+}, {threshold:.4}).observe(document.querySelector('.type-box'));
+
+/* ================= Film card toggle ================= */
+document.getElementById('filmCard').addEventListener('click', function(){
+  this.classList.toggle('open');
+});
+
+/* ================= Product cards: spotlight + modal ================= */
+document.querySelectorAll('.prod-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  });
+  card.addEventListener('click', () => {
+    const p = products[+card.dataset.prod];
+    document.getElementById('mK').textContent = p.k;
+    document.getElementById('mTitle').textContent = p.title;
+    document.getElementById('mEn').textContent = p.en;
+    document.getElementById('mImg').src = p.img;
+    document.getElementById('mDesc').textContent = p.desc;
+    document.getElementById('mFeats').innerHTML =
+      p.feats.map(f => `<div><b>${f[0]}</b>${f[1]}</div>`).join('');
+    document.getElementById('prodModal').classList.add('on');
+    document.body.style.overflow = 'hidden';
+  });
+});
+document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', () => {
+  document.getElementById('prodModal').classList.remove('on');
+  document.body.style.overflow = '';
+}));
+addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('prodModal').classList.remove('on');
+
+    document.body.style.overflow = '';
+  }
+});
+
+/* ================= Tech hotspots ================= */
+const partNo = document.getElementById('partNo'),
+      partName = document.getElementById('partName'),
+      partEn = document.getElementById('partEn'),
+      partDesc = document.getElementById('partDesc');
+function showPart(i){
+  const p = parts[i];
+  partNo.textContent = p.no;
+  partName.textContent = p.name;
+  partEn.textContent = p.en;
+  partDesc.textContent = p.desc;
+  document.querySelectorAll('.hotspot,.tech-tabs button').forEach(b => {
+    b.classList.toggle('on', b.dataset.part == i);
+  });
+}
+document.querySelectorAll('.hotspot,.tech-tabs button').forEach(b =>
+  b.addEventListener('click', () => showPart(+b.dataset.part)));
+
+/* ================= Steps + device panel ================= */
+const readout = document.getElementById('readout');
+const deviceMsgs = {
+  power: '<b>电源：</b>长按 2 秒开机 / 关机。开机后枕内提示音仅你可见——哦不，仅你可闻。',
+  play:  '<b>播放 / 暂停：</b>短按切换。配合枕下振子，暂停时也无需摸出手机。',
+  prev:  '<b>上一首：</b>切回上一段白噪音。雨声听腻了？试试篝火。',
+  next:  '<b>下一首：</b>向前切换声景。App 内可自定义顺序。',
+  bt:    '<b>蓝牙：</b>进入配对模式，打开 pillovox App 即可连接。'
+};
+let powered = true;
+document.querySelectorAll('.d-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const act = btn.dataset.act;
+    if (act === 'power') {
+      powered = !powered;
+      btn.classList.toggle('lit', powered);
+      readout.innerHTML = powered
+        ? '<b>开机：</b>蓝色呼吸灯亮起，Pillovox 已就绪。'
+        : '<b>关机：</b>晚安，愿你被温柔以待。';
+      return;
+    }
+    if (!powered) { readout.innerHTML = '<b>提示：</b>枕头处于关机状态，请先长按电源键开机。'; return; }
+    btn.classList.add('lit');
+    setTimeout(() => btn.classList.remove('lit'), 600);
+    readout.innerHTML = deviceMsgs[act];
+  });
+});
+document.querySelectorAll('.step-item').forEach(it =>
+  it.addEventListener('click', () => {
+    document.querySelectorAll('.step-item').forEach(x => x.classList.remove('on'));
+    it.classList.add('on');
+  }));
+
+</script>
+<script src="i18n.js"></script>
+</body>
+</html>
